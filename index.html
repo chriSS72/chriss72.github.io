@@ -6,6 +6,62 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/" />
+        <link href="./css/styles.css" rel="stylesheet" />
+        <link href="./node_modules/bootstrap/dist/css/navbar.css" rel="stylesheet" />
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        // Add "https://ipinfo.io" statement
+        // this will communicate with the ipify servers
+        // in order to retrieve the IP address
+        $.get("https://ipinfo.io", function(response) {
+                // alert(response.ip);
+                document.getElementById('HelloWIP').innerHTML += response.ip + "!";
+            }, "json")
+            // "json" shows that data will be fetched in json format
+        </script>
     </head>
+    <body>
+    
+    <main>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+          <a id="HelloWIP" class="navbar-brand" href="#">Hello </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
 </html>
