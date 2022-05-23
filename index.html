@@ -2,14 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Christian Soto</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Bootstrap CSS -->
         <link href="./styles.css" rel="stylesheet" type="text/css" />
         <link href="./navbar.css" rel="stylesheet" type="text/css" />
         <link href="./bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="./bootstrap-icons.css">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $.get("https://ipinfo.io", function(response) {document.getElementById('HelloWIP').innerHTML += "IP: " + response.ip + " City: " + response.city + " State: " + response.region;}, "json")
@@ -58,7 +60,7 @@
           <img src="./assets/images/bioPic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold lh-1 mb-3">A little something sbout me:</h1>
+          <h1 class="display-5 fw-bold lh-1 mb-3">A little something about me:</h1>
           <p class="lead"><b>My name is <u>Christian Soto</u></b>, I am originally from Ibague, Colombia and I currently work as a Senior Technical Support Engineer at a Virtualization company. In regards to education, I attended the University of Colorado at Boulder for an undergraduate degree in Computer Science, I also attended Colorado Technical University for a Master's degree in Computer Science with a focus in Cybersecurity Engineering.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
             <h3 class="btn btn-lg px-4" onclick="location.href='https://ipinfo.io';" id="HelloWIP" style="background-color: rgb(82, 131, 63);">That's how I know you are located in: <br></h3>
@@ -75,6 +77,5 @@
     
     <div class="b-example-divider"></div>
 
-    
     </body>
 </html>
