@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<!-- google maps library -->
+<script src="http://maps.google.com/maps/api/js"></script>
+
+<!-- google map element -->
+<div id="map" style="width:1024px; height:768px"></div>
+
+<script src="utilities.js"></script>
+<script>
+
+
+
+// ------------------------------------
+// all buses - timer
+// ------------------------------------
+// YOUR CODE
+
+var showBuses = function(){
+
+    var locations = getBusLocations();
+    var length    = locations.vehicle.length;
+    var bus       = null;
+
+    for (var i = 0; i < length; i++) {
+        bus = locations.vehicle[i];
+        addMarkers(bus);
+    }
+    console.log(new Date());
+};
+showBuses();
+
+setInterval(showBuses, 15000);
+
+</script>
+</html>
