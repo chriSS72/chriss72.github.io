@@ -1,2 +1,0 @@
-# buses
-Buses exercise
