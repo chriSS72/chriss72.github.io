@@ -15,6 +15,8 @@ const busStops = [
   ];
   
   // TODO: add your own access token
+  mapboxgl.accessToken = 'pk.eyJ1IjoiY2hyaXN0aWFuczcyIiwiYSI6ImNsMzJhZ3R6NDBoaWkza2xjNzVsOHFiZmkifQ.0ejMzGvOR6n-N_JQLq794w';
+/*
 console.log('pk.eyJ1IjoiY2hyaXN0aWFuczcyIiwiYSI6ImNsMzJhZ3R6NDBoaWkza2xjNzVsOHFiZmkifQ.0ejMzGvOR6n-N_JQLq794w');
 
 let text;
@@ -24,6 +26,7 @@ if (mapboxgl.accessToken == null || mapboxgl.accessToken == "") {
 } else {
     text = "Please enter an access token for MapBox GL:";
 }
+*/
 
   // This is the map instance
   let map = new mapboxgl.Map({
