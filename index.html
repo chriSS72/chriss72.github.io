@@ -74,7 +74,7 @@
     <div id="VIDEO" class="px-4 pt-5 my-5 text-center border-bottom">
         <h1 class="display-4 fw-bold">Video Introdution</h1>
         <div class="col-lg-7 mx-auto">
-            <p class="lead mb-4">Here is a video explaining my background, why I currently do, and what my plans are for the future.</p>
+            <p class="lead mb-4">Here is a video of me explaining my background, what I currently do and my plans for the future.</p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WBo8uWXLszs"></iframe>
@@ -84,6 +84,7 @@
     </div>
         
     <div id="PROJECTS" class="px-5 pt-5 my-5 border-bottom">
+        <!--
         <div class="bg-light">
             <div class="p-5 mb-4 bg-light text-white rounded-3" style='background: url("./assets/images/map.png") no-repeat center center;'>
                 <div class="container-fluid py-5">
@@ -107,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 card">
                     <div class="h-100 p-5 bg-light border rounded-3" style='background: url("./assets/images/eyes.png") no-repeat center center;'>
                         <h2>Eye Exercise</h2>
                         <p>This project demonstrates familiarity with programming in Javascript, HTML, and CSS. It consists of generating items/objects, in this case, eyeballs on the middle of the screen, and changing their location/focus depending on the location of the cursor.</p>
@@ -119,6 +120,55 @@
                 </div>
             </div>
         </div>
+        -->
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/images/map.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Real Time Bus Tracker</h5>
+                  <p class="card-text">This project demonstrates familiarity with APIs utilization, and programming in Javascript, HTML, and CSS. It consists in connecting to MapBox GL using an API access token, providing bus stop coordinates, displaying a map, and updating the location based on the coordinates of the stops.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button class="btn btn-primary btn-outline-light" type="button" onclick="location.href='https://github.com/chriSS72/Real-Time-Bus-Tracker';">GitHub Repository</button>
+                        <button class="btn btn-primary btn-outline-light" type="button" onclick="location.href='./projects/bus/bus.html';">Preview</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/images/eyes.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Eye Exercise</h5>
+                  <p class="card-text">This project demonstrates familiarity with programming in Javascript, HTML, and CSS. It consists of generating items/objects, in this case, eyeballs on the middle of the screen, and changing their location/focus depending on the location of the cursor.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button class="btn btn-primary btn-outline-light" type="button" onclick="location.href='https://github.com/chriSS72/Eye-Exercise';">GitHub Repository</button>
+                        <button class="btn btn-primary btn-outline-light" type="button" onclick="location.href='./projects/eyes/eyes.html';">Preview</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./assets/images/pacman1.png" class="card-img-top rounded mx-auto d-block" alt="..." style="max-width: 50%; height: auto; width: auto;">
+                <div class="card-body">
+                  <h5 class="card-title">PacMen Exercise</h5>
+                  <p class="card-text">This project demonstrates familiarity programming in Javascript, HTML, and CSS. It consists in generating different items/objects upon request by clicking a button. These objects or PacMen can start moving, changing acceleration, and also changing direction when hitting a wall.</p>
+                </div>
+                <div class="card-footer">
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button class="btn btn-primary btn-outline-light" type="button" onclick="location.href='https://github.com/chriSS72/Eye-Exercise';">GitHub Repository</button>
+                        <button class="btn btn-primary btn-outline-light" type="button" onclick="location.href='./projects/eyes/eyes.html';">Preview</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
 
     </body>
